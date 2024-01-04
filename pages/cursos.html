@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <script src="../js.js"></script>
+    <title>Cursos</title>
+</head>
+<div class="menu-toggle-contenedor">
+    <div class="logo-barra-desplegable">
+        <h3>Fotear</h3>
+    </div>
+    <button id="menu-toggle"><img class="ajustarlogos" src="../img/desplegable.png" alt=""></button>
+</div>
+
+
+
+<header class="fixed-top">
+        <div class="contenedor-navbar">
+            
+                <div>
+                    <h3>Fotear</h3>
+                </div>
+                <nav class="navegacionprincipal">
+                    <ul>
+                        <li>
+                            <div id="close-menu" style="cursor: pointer; display: none;">
+                                ✕
+                              </div>
+                        </li>
+                        <li>
+                        <a href="../index.html"  >Nosotros</a>
+                        </li>
+                        <li>
+                        <a href="../pages/servicios.html" >Servicios</a>
+                        </li>
+                        <li>
+                        <a href="../pages/portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                        <a href="../pages/cursos.html"class="pagina-actual">Cursos</a>
+                        </li>
+                        <li>
+                        <a href="../pages/contactanos.html">Contáctanos</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img id="instagram" src="../img/instagram.png" alt="instagram" class="ajustarlogos" onmouseover="cambiarColor('instagram', '../img/instagramhover.png')" onmouseout="cambiarColor('instagram', '../img/instagram.png')">
+                                <!-- falta poner la imagen definitiva con el otro color del hover-->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img id="facebook" src="../img/facelogo.png" alt="facebook" class="ajustarlogos" onmouseover="cambiarColor('facebook', '../img/facelogohover.png')" onmouseout="cambiarColor('facebook', '../img/facelogo.png')">
+                                <!-- falta poner la imagen definitiva con el otro color del hover-->
+                            </a>
+                        </li>
+                    </ul>     
+                </nav>     
+        </div>
+</header>
+
+    <main>
+        <section class="contenedor-cursos" >
+            <div class="card">
+                <img src="../img/Mesa de trabajo 3.png" alt="" class="ajustarimgcursos">
+                <h3>Fotografía Nivel Basico</h3>
+                <p>Introducción a la fotografía: manejo de cámara, composición y principios de exposición.</p>
+            </div>
+            <div class="card">
+                <img src="../img/Mesa de trabajo 4.png" alt="" class="ajustarimgcursos">
+                <h3>Fotografía Nivel Intermedio</h3>
+                <p>Técnicas avanzadas de composición, iluminación y edición fotográfica.</p> 
+            </div>
+            <div class="card">
+                <img src="../img/Mesa de trabajo 1.png" alt="" class="ajustarimgcursos">
+                <h3>Fotografía Nivel Avanzado</h3>
+                <p>Fotografía especializada: alta velocidad, larga exposición, proyectos conceptuales y perfeccionamiento técnico.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="left">
+                <h3>Fotear</h3>
+            </div>
+            <div class="center">
+                <h4>&copy;Fotear</h4>
+            </div>
+            <div class="right">
+                <a href="https://www.facebook.com/">
+                    <img src="../img/facelogo.png" alt="" class="ajustarlogos">
+                </a>
+            
+                <a href="https://www.instagram.com/">
+                    <img src="../img/instagram.png" alt="" class="ajustarlogos">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+

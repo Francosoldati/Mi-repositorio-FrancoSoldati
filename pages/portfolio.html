@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <script src="../js.js"></script>
+    <title>Portfolio</title>
+</head>
+<div class="menu-toggle-contenedor">
+    <div class="logo-barra-desplegable">
+        <h3>Fotear</h3>
+    </div>
+    <button id="menu-toggle"><img class="ajustarlogos" src="../img/desplegable.png" alt=""></button>
+</div>
+
+
+
+<header class="fixed-top">
+        <div class="contenedor-navbar">
+            
+                <div>
+                    <h3>Fotear</h3>
+                </div>
+                <nav class="navegacionprincipal">
+                    <ul>
+                        <li>
+                            <div id="close-menu" style="cursor: pointer; display: none;">
+                                ✕
+                              </div>
+                        </li>
+                        <li>
+                        <a href="../index.html"  >Nosotros</a>
+                        </li>
+                        <li>
+                        <a href="../pages/servicios.html" >Servicios</a>
+                        </li>
+                        <li>
+                        <a href="../pages/portfolio.html"class="pagina-actual">Portfolio</a>
+                        </li>
+                        <li>
+                        <a href="../pages/cursos.html">Cursos</a>
+                        </li>
+                        <li>
+                        <a href="../pages/contactanos.html">Contáctanos</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img id="instagram" src="../img/instagram.png" alt="instagram" class="ajustarlogos" onmouseover="cambiarColor('instagram', '../img/instagramhover.png')" onmouseout="cambiarColor('instagram', '../img/instagram.png')">
+                                <!-- falta poner la imagen definitiva con el otro color del hover-->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img id="facebook" src="../img/facelogo.png" alt="facebook" class="ajustarlogos" onmouseover="cambiarColor('facebook', '../img/facelogohover.png')" onmouseout="cambiarColor('facebook', '../img/facelogo.png')">
+                                <!-- falta poner la imagen definitiva con el otro color del hover-->
+                            </a>
+                        </li>
+                    </ul>     
+                </nav>     
+        </div>
+</header>
+
+    <main>
+        <section class="contenedor-portfolio" >
+            <div class="card">
+                <a href="https://www.behance.net/gallery/185230743/Photography-portfolio-Portraits">
+                    <img src="../img/p1.png" alt="" class="ajustarimgportfolio">
+                </a>
+                <h3>Retratos</h3>
+            </div>
+            <div class="card">
+                <a href="https://www.behance.net/gallery/186719191/Photography-Portfolio-product-Ceramica-Soldati">
+                    <img src="../img/1.png" alt="" class="ajustarimgportfolio">
+                </a>
+                <h3>Producto</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="left">
+                <h3>Fotear</h3>
+            </div>
+            <div class="center">
+                <h4>&copy;Fotear</h4>
+            </div>
+            <div class="right">
+                <a href="https://www.facebook.com/">
+                    <img src="../img/facelogo.png" alt="" class="ajustarlogos">
+                </a>
+            
+                <a href="https://www.instagram.com/">
+                    <img src="../img/instagram.png" alt="" class="ajustarlogos">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- enlazar css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Fotear</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<div class="bienvenida" id="bienvenida">
+    <div class="mensaje-bienvenida">
+        ¡Sonríe!
+    </div>
+    <div class="flash"></div>
+</div>
+
+<script src="js.js"></script>
+<body>
+<!--empieza barra de menu-->
+
+<div class="menu-toggle-contenedor">
+    <div class="logo-barra-desplegable">
+        <h3>Fotear</h3>
+    </div>
+    <button id="menu-toggle"><img class="ajustarlogos" src="img/desplegable.png" alt=""></button>
+</div>
+
+
+
+<header class="fixed-top">
+        <div class="contenedor-navbar">
+            
+                <div>
+                    <h3>Fotear</h3>
+                </div>
+                <nav class="navegacionprincipal">
+                    <ul>
+                        <li>
+                            <div id="close-menu" style="cursor: pointer; display: none;">
+                                ✕
+                              </div>
+                        </li>
+                        <li>
+                        <a href="index.html" class="pagina-actual" >Nosotros</a>
+                        </li>
+                        <li>
+                        <a href="pages/servicios.html" >Servicios</a>
+                        </li>
+                        <li>
+                        <a href="pages/portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                        <a href="pages/cursos.html">Cursos</a>
+                        </li>
+                        <li>
+                        <a href="pages/contactanos.html">Contáctanos</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img id="instagram" src="img/instagram.png" alt="instagram" class="ajustarlogos" onmouseover="cambiarColor('instagram', 'img/instagramhover.png')" onmouseout="cambiarColor('instagram', 'img/instagram.png')">
+                                <!-- falta poner la imagen definitiva con el otro color del hover-->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img id="facebook" src="img/facelogo.png" alt="facebook" class="ajustarlogos" onmouseover="cambiarColor('facebook', 'img/facelogohover.png')" onmouseout="cambiarColor('facebook', 'img/facelogo.png')">
+                                <!-- falta poner la imagen definitiva con el otro color del hover-->
+                            </a>
+                        </li>
+                    </ul>     
+                </nav>     
+        </div>
+</header>
+
+
+<main class="main">
+
+    <div class="contenedor-texto">
+    <h1>¡Hola! Bienvenido a Fotear</h1>
+    <p>Soy Franco, fotógrafo y diseñador de imagen y sonido con más de 5 años de experiencia en el arte de capturar imágenes. Ofrezco servicios profesionales de fotografía y edición para cualquier ocasión. Desde retratos hasta eventos especiales, foto-producto y campañas publicitarias.</p>
+    <p>Mi pasión por la fotografía se refleja en cada imagen, brindando calidad, creatividad y un toque personal en cada disparo.</p>
+</div>
+<div class="contenedor-imagen">
+    <img src="img/imgvector.JPG" alt="" class="ajustarimgmain">
+</div>
+
+
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="left">
+            <h3>Fotear</h3>
+        </div>
+        <div class="center">
+            <h4>&copy;Fotear</h4>
+        </div>
+        <div class="right">
+            <a href="https://www.facebook.com/">
+                <img src="img/facelogo.png" alt="" class="ajustarlogos">
+            </a>
+        
+            <a href="https://www.instagram.com/">
+                <img src="img/instagram.png" alt="" class="ajustarlogos">
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
