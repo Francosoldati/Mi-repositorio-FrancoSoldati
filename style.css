@@ -10,17 +10,17 @@ body{
 }
 
 .ajustarlogos{
-    width: 25px; /* Ancho deseado */
+    width: 25px;
     height: 25px;
 }
 
 .ajustarimgcursos{
-    width: 200px; /* Ancho deseado */
+    width: 200px;
     height: auto;
 }
 
 .ajustarimgportfolio{
-    width: 200px; /* Ancho deseado */
+    width: 200px;
     height: auto;
 }
 
@@ -69,7 +69,7 @@ body{
   height: 100%;
   background-color: #ffffff;
   animation: flash 0.3s 1.5s ease-in-out forwards;
-  opacity: 0; /* Añadimos opacidad inicial para que esté oculto */
+  opacity: 0;
 }
 
 .mensaje-bienvenida {
@@ -94,6 +94,7 @@ body{
 /* barra de navegacion */
 
 /* Estilos para el header y la barra de navegación */
+
 header.fixed-top {
   position: fixed;
   top: 0;
@@ -103,13 +104,13 @@ header.fixed-top {
   z-index: 1000;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-  transition: padding 0.3s, box-shadow 0.3s; /* Agrega transiciones suaves */
+  transition: padding 0.3s, box-shadow 0.3s;
   display: none;
 }
 
 header.fixed-top:hover {
-  padding: 5px 0px; /* Modifica el relleno para la versión achicada */
-  box-shadow: 0px 0px 15px rgba(127, 137, 161, 0.3); /* Puedes ajustar la sombra */
+  padding: 5px 0px;
+  box-shadow: 0px 0px 15px rgba(127, 137, 161, 0.3);
   
 }
 
@@ -141,87 +142,90 @@ header.fixed-top:hover {
 
 .navegacionprincipal ul li {
   display: inline;
-  margin-left: 20px; /* Ajusta la separación entre elementos */
+  margin-left: 20px;
 }
 
 .navegacionprincipal ul li a {
   text-decoration: none;
-  color: #333333; /* Cambia el color del texto según tu diseño */
+  color: #333333; 
 }
 .navegacionprincipal ul li a:hover{
   color: rgb(0, 184, 184);
 }
 
 .ajustarlogos {
-  width: 15px; /* Ajusta el tamaño de los íconos de redes sociales */
+  width: 15px;
   height: auto;
 }
 
 .navegacionprincipal ul li a.pagina-actual {
-  color: rgb(0, 184, 184); /* Cambia el color según la página actual */
+  color: rgb(0, 184, 184);
 }
 
 
 /* Estilos para la barra de navegación en dispositivos móviles */
 
 header.fixed-top.activo {
-  display: block; /* Mostrar la barra cuando se active la clase 'activo' */
-  
+  display: block; 
 }
 
 #close-menu {
-  font-size: 25px; /* Ajusta el tamaño del botón */
-  color: #333; /* Cambia el color del botón según tu diseño */
-  /* Agrega estilos adicionales según sea necesario */
+  font-size: 25px;
+  color: #333;
   display: flex;
 }
 
 
 /* Media Query para pantallas de hasta 768px de ancho (tamaño común de tablet) */
+
 @media screen and (max-width: 768px) {
   header.fixed-top {
-    padding: 10px 0px; /* Modifica el relleno para versiones más pequeñas */
+    padding: 10px 0px;
     bottom: 0px;
   }
 
   .contenedor-navbar {
-    flex-direction: column; /* Cambia la dirección del flexbox a columna */
-    align-items: flex-end; /* Alinea los elementos al inicio */
-    padding: 10px; /* Ajusta el relleno para tamaños de pantalla más pequeños */
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
   }
 
   .navegacionprincipal {
-    font-size: 25px; /* Reduce el tamaño de la fuente para dispositivos más pequeños */
+    font-size: 25px;
   }
 
   .navegacionprincipal ul {
-    flex-direction: column; /* Cambia la dirección de la lista a columna */
-    align-items: flex-end; /* Alinea los elementos al inicio */
+    flex-direction: column;
+    align-items: flex-end;
     gap: 11px;
     margin: 20px;
   }
 
   .navegacionprincipal ul li {
-    margin-left: 0; /* Elimina el margen izquierdo para la lista vertical */
-    margin-bottom: 10px; /* Agrega espaciado entre elementos de la lista */
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 }
+
 /* Estilos para el botón de menú en dispositivos móviles */
+
 @media screen and (min-width: 769px) {
   #menu-toggle {
-    display: none; /* Oculta el botón en pantallas más grandes */
+    display: none; 
   }
 }
 
 @media screen and (max-width: 768px) {
   #menu-toggle {
-    display: block; /* Muestra el botón en pantallas más pequeñas */
+    display: block;
   }
 }
+
 /* Estilos para el botón de menú en dispositivos móviles */
+
 @media screen and (max-width: 768px) {
   #menu-toggle {
-    display: block; /* Muestra el botón en pantallas más pequeñas */
+    display: block;
     border: none;
     background: none;
     padding: 0;
@@ -231,14 +235,14 @@ header.fixed-top.activo {
   }
 
   header.fixed-top {
-    display: none; /* Oculta la barra de navegación en pantallas más pequeñas */
+    display: none;
     overflow: hidden;
-  height: 0px; /* Altura inicial 0 */
-  transition: height 0.7s ease; /* Transición suave de la altura */
+  height: 0px;
+  transition: height 0.7s ease;
   }
 
   header.fixed-top.activo {
-    display: block; /* Muestra la barra de navegación cuando se active 'activo' */
+    display: block;
   } 
   .contenedor-navbar h3 {
     display: none;
@@ -246,13 +250,14 @@ header.fixed-top.activo {
 }
 
 /* Estilos para la barra de navegación en pantallas de escritorio */
+
 @media screen and (min-width: 769px) {
   #menu-toggle {
-    display: none; /* Oculta el botón en pantallas más grandes */
+    display: none;
   }
 
   header.fixed-top {
-    display: block; /* Muestra la barra de navegación en pantallas más grandes */
+    display: block;
   }
 }
 
@@ -271,9 +276,6 @@ header.fixed-top.activo {
   gap: 165px;
 }
 
-
-
-
 /* index main*/
 
 .main {
@@ -287,10 +289,9 @@ header.fixed-top.activo {
     justify-content: center;
 }
 
-
 .contenedor-texto {
-  flex: 1; /* Toma el espacio restante */
-  margin-right: 20px; /* Espacio entre el texto y la imagen */
+  flex: 1;
+  margin-right: 20px;
   padding: 26px 0px 0px 0px;
   display: flex;
   flex-wrap: wrap;
@@ -298,7 +299,7 @@ header.fixed-top.activo {
 }
 
 .contenedor-imagen {
-  flex: 1; /* Toma el espacio restante */
+  flex: 1;
   padding: 26px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   display: flex;
@@ -307,8 +308,8 @@ header.fixed-top.activo {
 }
 
 .ajustarimgmain {
-  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
-  height: auto; /* Mantiene la proporción */
+  max-width: 100%;
+  height: auto;
 }
 .main h1{
   font-family: 'Open Sans', sans-serif;
@@ -319,32 +320,26 @@ font-weight: bolder;
   font-size: small;
   padding: 8px 0px 0px 0px;
 }
+
 /* Estilos para pantallas más pequeñas */
+
 @media screen and (max-width: 768px) {
   .main {
-    margin: 0 20px; /* Reducir el margen en pantallas más pequeñas */
-    padding: 60px 20px; /* Ajustar el relleno en pantallas más pequeñas */
-    flex-direction: column; /* Cambiar a disposición de columna en pantallas más pequeñas */
+    margin: 0 20px;
+    padding: 60px 20px;
+    flex-direction: column;
   }
 
   .contenedor-texto,
   .contenedor-imagen {
-    flex: 1 100%; /* Ocupar todo el ancho en pantallas más pequeñas */
-    margin: 20px 0; /* Espacio entre secciones en pantallas más pequeñas */
-    padding: 0; /* Eliminar el relleno en pantallas más pequeñas */
+    flex: 1 100%;
+    margin: 20px 0;
+    padding: 0;
   }
 }
 
 
-
-
-
-
-
-
 /* index footer*/
-
-/* Resto de tus estilos */
 
 .footer {
   position: relative;
@@ -356,8 +351,6 @@ font-weight: bolder;
   text-align: center;
   padding: 0px;
 }
-
-
 
 .footer-content {
   display: flex;
@@ -381,26 +374,27 @@ font-weight: bolder;
   align-items: center;
 }
 
+
 /* Estilos para los logos */
+
 .ajustarlogos {
   width: 30px;
   height: 30px;
-  margin-left: 10px; /* Espacio entre los logos */
+  margin-left: 10px;
 }
 
 .right a:hover img {
-  transform: scale(1.2); /* Aumentar el tamaño al pasar el cursor */
-  transition: transform 0.3s ease; /* Agregar una transición suave */
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 .right a:nth-child(1):hover img {
-  transform: rotate(360deg); /* Rotar el ícono al pasar el cursor */
-  transition: transform 0.5s ease; /* Agregar una transición suave */
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
 }
 .right a:nth-child(2):hover img {
-  transform: rotate(360deg); /* Rotar el ícono al pasar el cursor */
-  transition: transform 0.5s ease; /* Agregar una transición suave */
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
 }
-
 
 
 
@@ -425,15 +419,17 @@ font-weight: bolder;
     display: inline-block;
     text-align: center;
     }
+
   /* Estilos para las imágenes */
+
   .ajustarimgportfolio {
-    max-width: 100%; /* Ajustar tamaño máximo */
-    border: 1px solid #ccc; /* Borde base */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra para simular relieve */
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
   
   .portfolioajustes h1 {
-    grid-column: 1 / -1; /* Ocupar todas las columnas */
+    grid-column: 1 / -1;
   }
 
   .portfolio{
@@ -441,12 +437,7 @@ font-weight: bolder;
     font-weight: bolder;
   }
 
-
-
-
-
   /*servicios*/
-
 
 .servicios {
   font-family: 'Open Sans', sans-serif;
@@ -469,35 +460,30 @@ font-weight: bolder;
 }
 
 .contenedor h3 {
-  margin-bottom: 30px; /* Aumentar el margen inferior para los encabezados */
+  margin-bottom: 30px;
 }
 
 .contenedor p {
-  margin-bottom: 45px; /* Aumentar el margen inferior para los párrafos */
+  margin-bottom: 45px;
 }
 
 /* Estilos para dispositivos móviles */
+
 @media only screen and (max-width: 600px) {
   .servicios {
-    padding: 50px 20px; /* Reducir el padding para dispositivos móviles */
-    height: 100vh; /* Establecer la altura al 100% del viewport height */
-    margin: 0; /* Eliminar los márgenes */
+    padding: 50px 20px;
+    height: 100vh;
+    margin: 0;
   }
 
   .contenedor h3 {
-    margin-bottom: 20px; /* Reducir el margen inferior para los encabezados en móviles */
+    margin-bottom: 20px;
   }
 
   .contenedor p {
-    margin-bottom: 30px; /* Reducir el margen inferior para los párrafos en móviles */
+    margin-bottom: 30px;
   }
 }
-
-
-
-
-
-
 
   /*cursos*/
 
@@ -521,11 +507,6 @@ display: inline-block;
 text-align: center;
 }
 
-
-
-
-
-  
   /*contactanos*/
 
 #contact {
@@ -557,13 +538,13 @@ text-align: center;
 
 .contact-form,
 .contact-image {
-  width: 100%; /* Ocupa el 100% del ancho en dispositivos pequeños */
-  margin-bottom: 20px; /* Espaciado entre elementos */
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .contact-form {
-  width: calc(50% - 20px); /* Calcula el 50% del ancho y resta el espacio entre los elementos */
-  margin-right: 20px; /* Espacio derecho entre elementos */
+  width: calc(50% - 20px);
+  margin-right: 20px;
 }
 
 #contact input[type="text"],
@@ -591,7 +572,7 @@ text-align: center;
 }
 
 .contact-image {
-  width: 45%; /* Ajusta el ancho de la imagen */
+  width: 45%;
 }
 
 .contact-image img {
@@ -602,21 +583,20 @@ text-align: center;
 }
 
 /* Estilos responsivos */
+
 @media (max-width: 768px) {
   .contact-form,
   .contact-image {
-    width: 100%; /* Ocupa el 100% del ancho en dispositivos pequeños */
-    margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
+    width: 100%;
+    margin-right: 0;
   }
 
   .contact-form {
-    width: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
-    margin-bottom: 20px; /* Espaciado entre elementos */
+    width: 100%;
+    margin-bottom: 20px;
   }
   .contact-content {
     display: flex;
     flex-direction: column;
-
- 
 }
 }
